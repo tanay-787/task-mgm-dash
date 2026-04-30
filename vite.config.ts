@@ -3,18 +3,16 @@ import react, { reactCompilerPreset } from '@vitejs/plugin-react'
 import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import babel from '@rolldown/plugin-babel'
-import tsconfigPaths from 'vite-tsconfig-paths'
-
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    // Enable tsconfig path resolution for Vite
-    tsconfigPaths(),
     tailwindcss(),
     babel({ presets: [reactCompilerPreset()] })
   ],
   resolve: {
+    // Use Vite's native tsconfig path support (preferred over plugin)
+    tsconfigPaths: true,
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
