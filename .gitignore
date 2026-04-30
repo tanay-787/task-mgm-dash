@@ -7,6 +7,16 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+.env
+
+reqs.md
+
+.agents/
+
+.github/
+
+skills-lock.json
+
 node_modules
 dist
 dist-ssr
