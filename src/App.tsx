@@ -109,7 +109,7 @@ export default function App() {
         <Card>
           <CardHeader>
             <CardTitle>Task Management Dashboard</CardTitle>
-            <CardDescription>Frontend consuming Google Apps Script backend (see reqs.md)</CardDescription>
+            <CardDescription>Frontend consuming Google Apps Script backend</CardDescription>
           </CardHeader>
         </Card>
       </header>
